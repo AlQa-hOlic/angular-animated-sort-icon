@@ -4,10 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --base-href \"https://alqa-holic.github.io/angular-animated-sort-icon/\"",
     "watch": "ng build --watch --configuration development",
     "lint": "ng lint",
-    "deploy": "gh-pages -d dist/animated-sort-icon"
+    "deploy": "yarn build && gh-pages -d dist/animated-sort-icon"
   },
   "private": true,
   "dependencies": {
