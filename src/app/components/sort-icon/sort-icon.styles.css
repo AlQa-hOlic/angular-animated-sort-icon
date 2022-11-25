@@ -1,0 +1,59 @@
+.animated-sort-icon {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  letter-spacing: normal;
+  width: 12px;
+  height: 12px;
+  position: relative;
+  @apply text-slate-700;
+  transform: scale(5);
+}
+.animated-sort-icon-indicator {
+  height: 2px;
+  width: 100%;
+  /* border: 1px solid salmon; */
+  display: flex;
+  justify-content: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* opacity: 0; */
+
+  transform: translateY(0px);
+}
+.animated-sort-icon-stem {
+  position: absolute;
+  height: 10px;
+  width: 2px;
+  margin-top: 1px;
+  background: currentColor;
+}
+
+.animated-sort-icon-pointer-middle {
+  height: 2px;
+  width: 2px;
+  transform: rotate(45deg);
+  background: currentColor;
+}
+
+.animated-sort-icon-pointer-left,
+.animated-sort-icon-pointer-right {
+  position: absolute;
+  top: 0;
+  width: 6px;
+  height: 2px;
+  background-color: currentColor;
+}
+
+.animated-sort-icon-pointer-left {
+  transform-origin: right;
+  left: 0;
+  /* transform: rotate(-45deg); */
+}
+.animated-sort-icon-pointer-right {
+  transform-origin: left;
+  right: 0;
+  /* transform: rotate(45deg); */
+}
